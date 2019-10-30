@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+	var n = 10;
+	var f = 3.14;
+	var b = true;
+	var s = 'hello World';
+	var c = 'C';
+	
+	
+	// 함수를 값으로 보는 것!!! - 엄청난것이다.
+	// 함수가 값을 리턴하는 것!!!  - 값으로 리터럴 될수 있다.
+	// 함수를 값으로 보는것에서 함수형 프로그래밍 사고 방식이 시작된다.
+	
+	var fn = function(a) {
+		return a + 10;
+	}
+	
+	var v1 = fn(10);
+	var v2 = n;
+	
+	///////
+	var o = {};
+	
+	
+	console.log(n + ":" + typeof(n));
+	console.log(f + ":" + typeof(f));
+	console.log(b + ":" + typeof(b));
+	console.log(s + ":" + typeof(s));
+	console.log(c + ":" + typeof(c));
+	console.log(fn + ":" + typeof(fn));	// 함수는 1급 시민
+	console.log(o + ":" + typeof(o));	// 함수는 1급 시민
+	
+	
+	var a = [];
+	console.log(a + ":" + typeof(a));	// 함수는 1급 시민
+	var re = /ab+1/;	// 리터럴로 정규표현식을 만들었음.
+	console.log(re + ":" + typeof(re));
+	
+	/*
+		[Point - 모든것이 객체이다. ]
+		[자료형   _ 유사객체]
+		// 값과 연관되어 있다.
+		// 총 객체의 종류는 5종류가 있다.
+		*Number
+		*Boolean
+		*String
+		*Function (값으로 보는 것은 중요, 함수형 프로그래밍에서...!!!)
+		*object
+		
+		[내장객체]
+		[생성자 함수를 통해 생성되는 객체]
+		[다음 생성자 함수들은 내장되어 있음 -> 내장객체]
+		[리터럴이 되는 것도 타입도 있고, 아닌 타입도 있다.]
+		object <- Object   - ***중요*** ***확장가능 _ 리터럴 가능(O)
+		object <- Array    - ***중요*** ***확장가능 _ 리터럴 가능(O)
+		object <- Function - ***중요***  _ 리터럴 가능(O)	
+		object <- Date 
+		object <- Math
+		object <- RegExp _ 리터럴 가능(O)
+		object <- String (o)
+		object <- Number (o)
+		Object <- Boolean (o)
+	*/
+</script>
+</head>
+<body>
+	<h1>JavaScript Type</h1>
+</body>
+</html> 

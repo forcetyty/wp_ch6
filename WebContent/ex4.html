@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// 1. var 사용 여부에 Scope이 영향을 받는다.
+// 2. 특히, local(함수 내부)에서 var를 사용해서 변수를 정의하면 local, 범위를 가진다.
+
+	i = 5;
+	
+	var f = function(){
+		// i = 20;  // 전역변수로 처럼 동작한다.
+		var i = 20;	// 지녕변수로 처럼 동작한다.
+		console.log(i);
+		i = i - 1;
+	}
+	
+	f();
+	console.log(i);
+	
+</script>
+</head>
+<body>
+	<h1>변수 범위(Scope)</h1>
+</body>
+</html>

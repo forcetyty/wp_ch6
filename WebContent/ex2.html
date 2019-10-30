@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+<script>
+	/* function h(){
+	 var v = "...";
+	 }
+	 h();
+	 v(); */
+	 // JavaScript를 먼저 컴파일한후에
+	 // 전체 문서를 DOM으로 파싱.
+
+	// 객체를 생성
+	var o1 = {}; 			 // 리터럴!!!
+	var o2 = new Object();   // 생성자 함수!!!
+	var d = new Date();      // 내장 생성자 함수 (내장객체)로 생성
+	var a1 = [ 10, 20, 30 ]; // 내장 생성자 함수(내장객체 Array)로 생성 /리터럴이 있다고 특별한 자료형이 아니다.
+	var a2 = new Array(10, 20, 30);
+	var My = function() {    // 사용자 생성자 함수
+		this.a = 10;
+	}                        // 생성자 함수 _ My <- 앞 글자를 대문자로 시작한다.  
+	var m = new My();        // 사용자 생성자 함수로 생성
+
+	// var n = 10;	// 확장이 안된다.
+	// n.a = 20;
+	// o1.a = 10;
+
+	//console.log(n.a);
+	console.log(typeof (o1));
+	console.log(typeof (o2));
+	console.log(typeof (d));
+	console.log(typeof (a1));
+	console.log(typeof (a2));
+	console.log(typeof (m));
+	
+	//
+	// 객체 확장
+	//
+	
+	// 1. 불가능 - 기본자료형(Number, String, boolean), 객체 확장 불가능
+	var i = 10;
+	i.s = "hello";
+	console.log(i + ":" + i.s);
+	
+	var b = true;
+	b.s = "hello";
+	console.log(b + ":" + b.s);
+	
+	var s = "hello";
+	s.s = "world";
+	console.log(s + ":" + s.s);
+	
+	
+	// 2. 확장가능 _ function, 가능
+	var f = function(){
+	}
+	
+	f.s = "hello";
+	console.log(f + ":" + f.s);
+	
+	var o = {};
+	o.s = "hello";
+	console.log(o + ":" + o.s);
+	
+	// 3. 내장 생성자 함수()
+	Object.s = "hello";
+	console.log(Object + ":" + Object.s);
+	
+	Array.s = "hello";
+	console.log(Array + ":" + Array.s);
+	
+	
+</script>
+</head>
+<body>
+	<h1>자바스크립트 객체(Object Type)</h1>
+	<h1>Type Object</h1>
+</body>
+</html>
