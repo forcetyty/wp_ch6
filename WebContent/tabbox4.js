@@ -1,7 +1,7 @@
 /**
  * 
  */
-
+// DOM을 파싱해서 읽어오는 기능!!!
 	var tabBox = {
 		liSelected : null, 
 		onTabClicked : function(){

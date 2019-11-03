@@ -16,7 +16,11 @@ function onLoad() {
 }
 
 function displayDate(){
+	// P tag를 바탕으로 demo id로 연결된 위치에 표시
+	// innerHTML은 HTML 내부에 표현
+	// Date() - 날짜를 가져오는 함수.
    document.getElementById("demo").innerHTML = Date();
+   document.getElementById("demo1").innerHTML = Date();
 }
 </script>
 
@@ -26,5 +30,6 @@ function displayDate(){
 	<p>버튼을 클릭하면  <em>displayDate()</em> 함수가 실행 됩니다.</p>
 	<button id="myBtn">Try it</button>
 	<p id="demo"></p>
+	<p id="demo1"></p>
 </body>
 </html>
